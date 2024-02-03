@@ -19,6 +19,7 @@ database.connectDB()
 
 // init routes
 app.use('/api/v1', Routes.healthRoute)
+app.use('/api/v1/weather', Routes.weatherRoute)
 
 app.listen(CONSTANTS.PORT, () => {
     logger.info(`Server is running on port ${CONSTANTS.PORT}`)
